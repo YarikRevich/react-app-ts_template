@@ -6,4 +6,5 @@ let reducers = combineReducers<Reducer>({
     app: appReducer
 })
 
-export let store = createStore(reducers, applyMiddleware(thunk));
+export const store = createStore(reducers, applyMiddleware(thunk));
+export const testStore = createStore(reducers, applyMiddleware(thunk));
